@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+
+  --color-navy: #0B1D3A;
+  --color-gold: #C9A84C;
+  --color-cream: #F4F3EF;
+}
+
+@keyframes heroFlow {
+  from { stroke-dashoffset: 1400; }
+  to   { stroke-dashoffset: 0; }
+}
+
+.hero-flow {
+  stroke-dasharray: 1400;
+  animation: heroFlow 7s linear infinite;
+}
+
+.hero-flow-slow {
+  stroke-dasharray: 1700;
+  animation: heroFlow 11s linear infinite;
+  animation-delay: -4s;
+}

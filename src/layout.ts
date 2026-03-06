@@ -1,0 +1,50 @@
+const navHTML = `
+<nav class="fixed top-0 w-full z-50 bg-navy border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-16">
+    <a href="/" class="font-display text-base font-semibold text-white tracking-wide">Sutan Mufti</a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="/#services" class="text-sm text-white/60 hover:text-white transition-colors duration-200">Services</a>
+      <a href="/#work" class="text-sm text-white/60 hover:text-white transition-colors duration-200">Work</a>
+      <a href="/about.html" class="text-sm text-white/60 hover:text-white transition-colors duration-200">About</a>
+      <a href="/#contact" class="text-sm bg-gold text-navy px-5 py-2 font-semibold hover:bg-gold/85 transition-colors duration-200">
+        Contact
+      </a>
+    </div>
+    <button class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
+      <span class="w-5 h-px bg-white/70 block"></span>
+      <span class="w-5 h-px bg-white/70 block"></span>
+      <span class="w-5 h-px bg-white/70 block"></span>
+    </button>
+  </div>
+</nav>
+`
+
+const footerHTML = `
+<footer class="bg-navy py-10 border-t border-white/10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-center justify-between gap-6">
+    <span class="font-display text-white font-semibold">Sutan Mufti</span>
+    <span class="text-white/25 text-xs">&copy; 2026 Sutan Mufti. All rights reserved.</span>
+    <div class="flex items-center gap-8">
+      <a href="/#services" class="text-white/35 text-xs hover:text-white/65 transition-colors duration-200">Services</a>
+      <a href="/#work" class="text-white/35 text-xs hover:text-white/65 transition-colors duration-200">Work</a>
+      <a href="/about.html" class="text-white/35 text-xs hover:text-white/65 transition-colors duration-200">About</a>
+      <a href="/#contact" class="text-white/35 text-xs hover:text-white/65 transition-colors duration-200">Contact</a>
+      <div class="w-px h-4 bg-white/15"></div>
+      <a href="https://linkedin.com/in/sutanmufti" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-white/35 hover:text-white/65 transition-colors duration-200">
+        <i data-lucide="linkedin" class="w-4 h-4"></i>
+      </a>
+      <a href="https://github.com/sutanmufti" target="_blank" rel="noopener" aria-label="GitHub" class="text-white/35 hover:text-white/65 transition-colors duration-200">
+        <i data-lucide="github" class="w-4 h-4"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+`
+
+export function mountNav(): void {
+  document.body.insertAdjacentHTML('afterbegin', navHTML)
+}
+
+export function mountFooter(): void {
+  document.body.insertAdjacentHTML('beforeend', footerHTML)
+}
