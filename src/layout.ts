@@ -11,11 +11,21 @@ const navHTML = `
         Contact
       </a>
     </div>
-    <button class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
-      <span class="w-5 h-px bg-white/70 block"></span>
-      <span class="w-5 h-px bg-white/70 block"></span>
-      <span class="w-5 h-px bg-white/70 block"></span>
+    <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu" aria-expanded="false">
+      <span class="w-5 h-px bg-white/70 block transition-transform duration-200"></span>
+      <span class="w-5 h-px bg-white/70 block transition-opacity duration-200"></span>
+      <span class="w-5 h-px bg-white/70 block transition-transform duration-200"></span>
     </button>
+  </div>
+  <!-- Mobile menu panel -->
+  <div id="mobile-menu" class="md:hidden hidden bg-navy border-t border-white/10">
+    <div class="flex flex-col px-6 py-4 gap-1">
+      <a href="/#services" class="text-sm text-white/60 hover:text-white py-3 border-b border-white/5 transition-colors duration-200">Services</a>
+      <a href="/#work"     class="text-sm text-white/60 hover:text-white py-3 border-b border-white/5 transition-colors duration-200">Work</a>
+      <a href="/#gis"      class="text-sm text-white/60 hover:text-white py-3 border-b border-white/5 transition-colors duration-200">GIS</a>
+      <a href="/about.html" class="text-sm text-white/60 hover:text-white py-3 border-b border-white/5 transition-colors duration-200">About</a>
+      <a href="/#contact"  class="text-sm text-white/60 hover:text-white py-3 transition-colors duration-200">Contact</a>
+    </div>
   </div>
 </nav>
 `
@@ -44,6 +54,33 @@ const footerHTML = `
 
 export function mountNav(): void {
   document.body.insertAdjacentHTML('afterbegin', navHTML)
+
+  const btn = document.getElementById('mobile-menu-btn')!
+  const menu = document.getElementById('mobile-menu')!
+  const bars = btn.querySelectorAll('span')
+
+  btn.addEventListener('click', () => {
+    const isOpen = !menu.classList.contains('hidden')
+
+    menu.classList.toggle('hidden', isOpen)
+    btn.setAttribute('aria-expanded', String(!isOpen))
+
+    // Animate hamburger to X
+    bars[0].style.transform = isOpen ? '' : 'translateY(6px) rotate(45deg)'
+    bars[1].style.opacity   = isOpen ? '' : '0'
+    bars[2].style.transform = isOpen ? '' : 'translateY(-6px) rotate(-45deg)'
+  })
+
+  // Close menu when any link inside it is clicked
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden')
+      btn.setAttribute('aria-expanded', 'false')
+      bars[0].style.transform = ''
+      bars[1].style.opacity   = ''
+      bars[2].style.transform = ''
+    })
+  })
 }
 
 export function mountFooter(): void {
