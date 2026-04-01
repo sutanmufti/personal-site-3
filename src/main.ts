@@ -1,10 +1,10 @@
 // import './style.css'
-import { createIcons, Building2, Cpu, MapPin, ArrowRight, ChevronRight, Linkedin, Github, Layers, Database, Zap, Globe, Cloud, Map, ExternalLink, GitBranch, Triangle, Terminal, Workflow, Server } from 'lucide'
+import { createIcons, Building2, Cpu, MapPin, ArrowRight, ChevronRight, Linkedin, Github, Layers, Database, Zap, Globe, Cloud, Map, ExternalLink, GitBranch, Triangle, Terminal, Workflow, Server, Sparkles, Bot, UserCheck, ShieldCheck, Lock, Activity } from 'lucide'
 import { mountNav, mountFooter } from './layout'
 
 mountNav()
 mountFooter()
 
 createIcons({
-  icons: { Building2, Cpu, MapPin, ArrowRight, ChevronRight, Linkedin, Github, Layers, Database, Zap, Globe, Cloud, Map, ExternalLink, GitBranch, Triangle, Terminal, Workflow, Server }
+  icons: { Building2, Cpu, MapPin, ArrowRight, ChevronRight, Linkedin, Github, Layers, Database, Zap, Globe, Cloud, Map, ExternalLink, GitBranch, Triangle, Terminal, Workflow, Server, Sparkles, Bot, UserCheck, ShieldCheck, Lock, Activity }
 })
