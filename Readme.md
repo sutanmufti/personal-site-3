@@ -5,6 +5,7 @@
 [![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Deployed on GitHub Pages](https://img.shields.io/badge/deployed-GitHub_Pages-222?style=flat-square&logo=github&logoColor=white)](https://sutan.co.uk)
+[![Deploy to GitHub Pages](https://github.com/sutanmufti/personal-site-3/actions/workflows/deploy.yml/badge.svg)](https://github.com/sutanmufti/personal-site-3/actions/workflows/deploy.yml)
 
 Personal portfolio and advisory website for Sutan Ashari Mufti.
 
