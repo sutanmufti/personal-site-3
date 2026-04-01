@@ -7,6 +7,10 @@ const navHTML = `
       <a href="/#work" class="text-sm text-white/60 hover:text-white transition-colors duration-200">Work</a>
       <a href="/#gis" class="text-sm text-white/60 hover:text-white transition-colors duration-200">GIS</a>
       <a href="/about.html" class="text-sm text-white/60 hover:text-white transition-colors duration-200">About</a>
+      <a href="/ai.html" class="text-sm text-white/60 hover:text-white transition-colors duration-200 flex items-center gap-1.5">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-gold"></i>
+        AI
+      </a>
       <a href="/#contact" class="text-sm bg-gold text-navy px-5 py-2 font-semibold hover:bg-gold/85 transition-colors duration-200">
         Contact
       </a>
@@ -24,6 +28,7 @@ const navHTML = `
       <a href="/#work"     class="text-sm text-white/60 hover:text-white py-3 border-b border-white/5 transition-colors duration-200">Work</a>
       <a href="/#gis"      class="text-sm text-white/60 hover:text-white py-3 border-b border-white/5 transition-colors duration-200">GIS</a>
       <a href="/about.html" class="text-sm text-white/60 hover:text-white py-3 border-b border-white/5 transition-colors duration-200">About</a>
+      <a href="/ai.html"   class="text-sm text-white/60 hover:text-white py-3 border-b border-white/5 transition-colors duration-200">AI</a>
       <a href="/#contact"  class="text-sm text-white/60 hover:text-white py-3 transition-colors duration-200">Contact</a>
     </div>
   </div>
