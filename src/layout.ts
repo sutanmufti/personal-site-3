@@ -49,7 +49,7 @@ const footerHTML = `
       <a href="https://linkedin.com/in/sutanmufti" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-white/35 hover:text-white/65 transition-colors duration-200">
         <i data-lucide="linkedin" class="w-4 h-4"></i>
       </a>
-      <a href="https://github.com/sutanmufti" target="_blank" rel="noopener" aria-label="GitHub" class="text-white/35 hover:text-white/65 transition-colors duration-200">
+      <a href="https://github.com/sutanmufti/personal-site-3" target="_blank" rel="noopener" aria-label="GitHub" class="text-white/35 hover:text-white/65 transition-colors duration-200">
         <i data-lucide="github" class="w-4 h-4"></i>
       </a>
     </div>

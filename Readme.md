@@ -1,4 +1,10 @@
-# showcase
+# Sutan.co.uk
+
+[![Live Site](https://img.shields.io/badge/live-sutan.co.uk-0B1D3A?style=flat-square&logo=globe&logoColor=C9A84C)](https://sutan.co.uk)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Deployed on GitHub Pages](https://img.shields.io/badge/deployed-GitHub_Pages-222?style=flat-square&logo=github&logoColor=white)](https://sutan.co.uk)
 
 Personal portfolio and advisory website for Sutan Ashari Mufti.
 
