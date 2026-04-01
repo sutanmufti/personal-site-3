@@ -57,6 +57,33 @@ const footerHTML = `
 </footer>
 `
 
+const CV_DISMISS_KEY = 'cv_banner_dismissed_until'
+const CV_DISMISS_MS  = 24 * 60 * 60 * 1000 // 1 day
+
+export function mountCVBanner(): void {
+  const dismissedUntil = localStorage.getItem(CV_DISMISS_KEY)
+  if (dismissedUntil && Date.now() < parseInt(dismissedUntil)) return
+
+  const banner = document.createElement('div')
+  banner.id = 'cv-banner'
+  banner.className = 'fixed bottom-5 right-5 z-50 flex items-center gap-3 bg-navy border border-gold/40 shadow-lg px-4 py-3 text-sm'
+  banner.innerHTML = `
+    <i data-lucide="download" class="w-4 h-4 text-gold shrink-0"></i>
+    <a href="/20260224_cv.pdf" download class="text-white font-medium hover:text-gold transition-colors duration-200 whitespace-nowrap">
+      Download CV
+    </a>
+    <button id="cv-banner-dismiss" aria-label="Dismiss" class="ml-1 text-white/30 hover:text-white/70 transition-colors duration-200">
+      <i data-lucide="x" class="w-3.5 h-3.5"></i>
+    </button>
+  `
+  document.body.appendChild(banner)
+
+  document.getElementById('cv-banner-dismiss')!.addEventListener('click', () => {
+    localStorage.setItem(CV_DISMISS_KEY, String(Date.now() + CV_DISMISS_MS))
+    banner.remove()
+  })
+}
+
 export function mountNav(): void {
   document.body.insertAdjacentHTML('afterbegin', navHTML)
 
