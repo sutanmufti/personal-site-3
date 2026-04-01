@@ -94,56 +94,70 @@
     </section>
 
     <!-- Approach -->
-    <section id="approach" class="py-28 bg-cream">
-      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <section id="approach" class="py-28 relative overflow-hidden">
+
+      <!-- Video background -->
+      <video autoplay muted loop playsinline
+             class="absolute inset-0 w-full h-full object-cover scale-105"
+             style="filter: saturate(0.3) brightness(0.55);">
+        <source src="/pexels_Video_by_Erik_Mclean_16723313-uhd_3840_2160_60fps.webm" type="video/webm">
+      </video>
+      <!-- Navy tint overlay -->
+      <div class="absolute inset-0 bg-navy/70"></div>
+      <!-- Video credit -->
+      <p class="absolute bottom-3 right-4 z-10 text-white/20 text-[10px] leading-none">
+        Video by <a href="https://www.pexels.com/video/a-view-of-tall-buildings-in-a-city-16723313/" target="_blank" rel="noopener" class="underline hover:text-white/40 transition-colors duration-200">Erik Mclean / Pexels</a>
+      </p>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
         <p class="text-gold text-xs font-semibold tracking-[0.25em] uppercase mb-4">Method</p>
         <div class="grid md:grid-cols-2 gap-16 lg:gap-24 items-start mb-20">
           <div>
-            <h2 class="font-display text-4xl md:text-5xl font-bold text-navy leading-tight mb-8">
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-white leading-tight mb-8">
               Component by<br />Component.<br />Architecture First.
             </h2>
-            <p class="text-gray-500 text-base leading-relaxed mb-6">
+            <p class="text-white/55 text-base leading-relaxed mb-6">
               Working with AI tooling productively means holding the full technical architecture in mind before a single prompt is written. The system design, data boundaries, security model, and deployment constraints are all established first. The AI then fills in components within a plan — not a substitute for one.
             </p>
-            <p class="text-gray-500 text-base leading-relaxed">
+            <p class="text-white/55 text-base leading-relaxed">
               Each component is evaluated before it is merged. That evaluation covers correctness, security, performance, and whether it fits cleanly into the surrounding system. Code that passes a test but introduces an IDOR vulnerability or leaks session state does not pass a review.
             </p>
           </div>
 
           <div class="space-y-px">
-            <div class="bg-white p-8 border-l-2 border-gold">
+            <div class="bg-white/8 backdrop-blur-sm p-8 border-l-2 border-gold">
               <div class="flex items-start gap-4">
-                <span class="font-display text-2xl font-bold text-navy/15 shrink-0">01</span>
+                <span class="font-display text-2xl font-bold text-white/15 shrink-0">01</span>
                 <div>
-                  <h3 class="font-display text-lg font-semibold text-navy mb-2">Define the Architecture</h3>
-                  <p class="text-gray-400 text-sm leading-relaxed">Data model, service boundaries, auth patterns, and deployment topology are fixed before any code is generated. The AI works inside a plan, not around the absence of one.</p>
+                  <h3 class="font-display text-lg font-semibold text-white mb-2">Define the Architecture</h3>
+                  <p class="text-white/45 text-sm leading-relaxed">Data model, service boundaries, auth patterns, and deployment topology are fixed before any code is generated. The AI works inside a plan, not around the absence of one.</p>
                 </div>
               </div>
             </div>
-            <div class="bg-white p-8 border-l-2 border-gold/40">
+            <div class="bg-white/5 backdrop-blur-sm p-8 border-l-2 border-gold/40">
               <div class="flex items-start gap-4">
-                <span class="font-display text-2xl font-bold text-navy/15 shrink-0">02</span>
+                <span class="font-display text-2xl font-bold text-white/15 shrink-0">02</span>
                 <div>
-                  <h3 class="font-display text-lg font-semibold text-navy mb-2">Direct Component by Component</h3>
-                  <p class="text-gray-400 text-sm leading-relaxed">Prompts are scoped tightly — one endpoint, one module, one migration at a time. Loose prompts produce loose code. Precision at the prompt level keeps the output reviewable and replaceable.</p>
+                  <h3 class="font-display text-lg font-semibold text-white mb-2">Direct Component by Component</h3>
+                  <p class="text-white/45 text-sm leading-relaxed">Prompts are scoped tightly — one endpoint, one module, one migration at a time. Loose prompts produce loose code. Precision at the prompt level keeps the output reviewable and replaceable.</p>
                 </div>
               </div>
             </div>
-            <div class="bg-white p-8 border-l-2 border-gold/40">
+            <div class="bg-white/5 backdrop-blur-sm p-8 border-l-2 border-gold/40">
               <div class="flex items-start gap-4">
-                <span class="font-display text-2xl font-bold text-navy/15 shrink-0">03</span>
+                <span class="font-display text-2xl font-bold text-white/15 shrink-0">03</span>
                 <div>
-                  <h3 class="font-display text-lg font-semibold text-navy mb-2">Evaluate the Output</h3>
-                  <p class="text-gray-400 text-sm leading-relaxed">Every generated component is read, not just run. SQL injection surfaces at review, not in production. Insecure defaults — open CORS, hardcoded secrets, unvalidated input — are caught before they reach a deploy.</p>
+                  <h3 class="font-display text-lg font-semibold text-white mb-2">Evaluate the Output</h3>
+                  <p class="text-white/45 text-sm leading-relaxed">Every generated component is read, not just run. SQL injection surfaces at review, not in production. Insecure defaults — open CORS, hardcoded secrets, unvalidated input — are caught before they reach a deploy.</p>
                 </div>
               </div>
             </div>
-            <div class="bg-white p-8 border-l-2 border-gold/40">
+            <div class="bg-white/5 backdrop-blur-sm p-8 border-l-2 border-gold/40">
               <div class="flex items-start gap-4">
-                <span class="font-display text-2xl font-bold text-navy/15 shrink-0">04</span>
+                <span class="font-display text-2xl font-bold text-white/15 shrink-0">04</span>
                 <div>
-                  <h3 class="font-display text-lg font-semibold text-navy mb-2">Ship and Iterate</h3>
-                  <p class="text-gray-400 text-sm leading-relaxed">CI/CD pipelines, automated tests, and infrastructure-as-code keep the delivery loop tight. What is shipped is production-grade — not a prototype left running indefinitely.</p>
+                  <h3 class="font-display text-lg font-semibold text-white mb-2">Ship and Iterate</h3>
+                  <p class="text-white/45 text-sm leading-relaxed">CI/CD pipelines, automated tests, and infrastructure-as-code keep the delivery loop tight. What is shipped is production-grade — not a prototype left running indefinitely.</p>
                 </div>
               </div>
             </div>
