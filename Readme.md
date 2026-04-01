@@ -4,6 +4,14 @@ Personal portfolio and advisory website for Sutan Ashari Mufti.
 
 Built with TypeScript, Vite, and Tailwind CSS v4.
 
+## Important Commands
+
+convert video
+
+```
+ffmpeg -i input.mp4 -c:v libvpx-vp9 -crf 32 -b:v 0 output.webm
+```
+
 ## Pages
 
 | Page | File | Description |
