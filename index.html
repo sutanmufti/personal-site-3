@@ -33,75 +33,7 @@
   <body class="bg-white text-gray-900 font-sans antialiased">
 
     <!-- Hero -->
-    <section class="bg-navy h-screen flex items-center pt-16 overflow-hidden">
-      <div class="max-w-7xl mx-auto px-6 lg:px-10 w-full grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-
-        <!-- Text -->
-        <div>
-          <p class="text-gold text-xs font-semibold tracking-[0.25em] uppercase mb-8">
-            Urban Infrastructure &middot; Software Engineering &middot; Southeast Asia
-          </p>
-          <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-8">
-            Where the Built<br />Environment<br />Meets Software
-          </h1>
-          <p class="text-white/55 text-lg md:text-xl max-w-lg leading-relaxed mb-14">
-            Specialist advisory for public agencies, developers, and technology companies navigating complex infrastructure challenges, with software engineering discipline applied to the systems that shape cities.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4">
-            <a href="#work" class="inline-block bg-gold text-navy px-8 py-3.5 text-sm font-semibold tracking-wide hover:bg-gold/85 transition-colors duration-200">
-              Explore the Work
-            </a>
-            <a href="#contact" class="inline-block border border-white/25 text-white px-8 py-3.5 text-sm font-medium tracking-wide hover:border-white/50 hover:bg-white/5 transition-colors duration-200">
-              Get in Touch
-            </a>
-          </div>
-        </div>
-
-        <!-- SVG Graphic -->
-        <div class="hidden lg:flex items-center justify-center">
-          <svg viewBox="0 0 560 720" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-full max-h-[70vh]">
-            <defs>
-              <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-                <feGaussianBlur stdDeviation="3" result="blur"/>
-                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-              </filter>
-            </defs>
-
-            <!-- Static backdrop spirals -->
-            <path d="M 530 70 C 650 260 610 530 420 640 C 230 750 50 640 25 455 C 0 270 110 75 295 48 C 480 20 590 150 545 295 C 500 440 375 495 255 462" stroke="#C9A84C" stroke-width="0.8" opacity="0.10" fill="none"/>
-            <path d="M 475 115 C 575 285 545 510 380 608 C 215 706 65 602 58 428 C 50 254 168 118 318 100 C 468 82 548 198 505 328 C 462 458 345 506 232 474" stroke="#C9A84C" stroke-width="0.8" opacity="0.17" fill="none"/>
-            <path d="M 418 162 C 502 302 480 494 338 572 C 196 650 78 558 82 396 C 86 234 198 150 328 153 C 458 156 516 258 472 366 C 428 474 318 512 218 482" stroke="#C9A84C" stroke-width="1" opacity="0.26" fill="none"/>
-
-            <!-- Faint silver arc for depth -->
-            <path d="M 195 28 C 385 8 548 162 525 365 C 502 568 335 685 155 642 C -25 599 -42 415 82 275" stroke="white" stroke-width="0.5" opacity="0.07" fill="none"/>
-
-            <!-- Animated flowing arcs (with glow) -->
-            <path class="hero-flow" d="M 358 182 C 442 302 422 472 300 542 C 178 612 78 530 90 388 C 102 246 214 168 335 184" stroke="#C9A84C" stroke-width="1.4" opacity="0.6" fill="none" stroke-linecap="round" filter="url(#glow)"/>
-            <path class="hero-flow-slow" d="M 462 138 C 554 292 532 504 378 594 C 224 684 72 586 65 412 C 58 238 178 108 334 92 C 490 76 562 212 512 342" stroke="#C9A84C" stroke-width="1" opacity="0.38" fill="none" stroke-linecap="round" filter="url(#glow)"/>
-
-            <!-- Node dots -->
-            <circle cx="530"  cy="70"  r="3"   fill="#C9A84C" opacity="0.65"/>
-            <circle cx="25"   cy="455" r="2.5" fill="#C9A84C" opacity="0.45"/>
-            <circle cx="295"  cy="48"  r="2"   fill="#C9A84C" opacity="0.30"/>
-            <circle cx="255"  cy="462" r="2.5" fill="white"   opacity="0.14"/>
-            <circle cx="475"  cy="115" r="2"   fill="#C9A84C" opacity="0.38"/>
-            <circle cx="335"  cy="184" r="3.5" fill="#C9A84C" opacity="0.55" filter="url(#glow)"/>
-            <circle cx="300"  cy="542" r="2.5" fill="#C9A84C" opacity="0.45" filter="url(#glow)"/>
-            <circle cx="82"   cy="396" r="2"   fill="white"   opacity="0.12"/>
-            <circle cx="218"  cy="482" r="1.5" fill="#C9A84C" opacity="0.25"/>
-
-            <!-- Fine connector lines between nodes -->
-            <line x1="530" y1="70"  x2="475" y2="115" stroke="#C9A84C" stroke-width="0.5" opacity="0.22"/>
-            <line x1="335" y1="184" x2="300" y2="542" stroke="white"   stroke-width="0.4" opacity="0.07"/>
-            <line x1="255" y1="462" x2="218" y2="482" stroke="#C9A84C" stroke-width="0.5" opacity="0.20"/>
-          </svg>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- AI section -->
-    <section class="bg-navy py-28 relative overflow-hidden">
+    <section class="bg-navy h-screen flex items-center pt-16 relative overflow-hidden">
       <video autoplay muted loop playsinline
              class="absolute inset-0 w-full h-full object-cover"
              style="filter: saturate(0.6) brightness(0.4);">
@@ -111,6 +43,57 @@
       <p class="absolute bottom-3 right-4 z-10 text-white/20 text-[10px] leading-none">
         Video by <a href="https://www.pexels.com/video/an-artist-s-animation-of-artificial-intelligence-ai-this-piece-explores-the-prediction-method-used-in-large-language-models-it-was-created-by-wes-cockx-as-part-of-the-visualising-ai-pr-18069804/" target="_blank" rel="noopener" class="underline hover:text-white/40 transition-colors duration-200">Google DeepMind / Pexels</a>
       </p>
+      <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 w-full">
+        <p class="text-gold text-xs font-semibold tracking-[0.25em] uppercase mb-8">
+          Urban Infrastructure &middot; Software Engineering &middot; Southeast Asia
+        </p>
+        <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-8">
+          Where the Built<br />Environment<br />Meets Software
+        </h1>
+        <p class="text-white/55 text-lg md:text-xl max-w-lg leading-relaxed mb-14">
+          Specialist advisory for public agencies, developers, and technology companies navigating complex infrastructure challenges, with software engineering discipline applied to the systems that shape cities.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#work" class="inline-block bg-gold text-navy px-8 py-3.5 text-sm font-semibold tracking-wide hover:bg-gold/85 transition-colors duration-200">
+            Explore the Work
+          </a>
+          <a href="#contact" class="inline-block border border-white/25 text-white px-8 py-3.5 text-sm font-medium tracking-wide hover:border-white/50 hover:bg-white/5 transition-colors duration-200">
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI section -->
+    <section class="bg-navy py-28 relative overflow-hidden">
+      <!-- SVG Graphic background -->
+      <svg viewBox="0 0 560 720" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+           class="absolute inset-0 w-full h-full opacity-20" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <path d="M 530 70 C 650 260 610 530 420 640 C 230 750 50 640 25 455 C 0 270 110 75 295 48 C 480 20 590 150 545 295 C 500 440 375 495 255 462" stroke="#C9A84C" stroke-width="0.8" opacity="0.10" fill="none"/>
+        <path d="M 475 115 C 575 285 545 510 380 608 C 215 706 65 602 58 428 C 50 254 168 118 318 100 C 468 82 548 198 505 328 C 462 458 345 506 232 474" stroke="#C9A84C" stroke-width="0.8" opacity="0.17" fill="none"/>
+        <path d="M 418 162 C 502 302 480 494 338 572 C 196 650 78 558 82 396 C 86 234 198 150 328 153 C 458 156 516 258 472 366 C 428 474 318 512 218 482" stroke="#C9A84C" stroke-width="1" opacity="0.26" fill="none"/>
+        <path d="M 195 28 C 385 8 548 162 525 365 C 502 568 335 685 155 642 C -25 599 -42 415 82 275" stroke="white" stroke-width="0.5" opacity="0.07" fill="none"/>
+        <path class="hero-flow" d="M 358 182 C 442 302 422 472 300 542 C 178 612 78 530 90 388 C 102 246 214 168 335 184" stroke="#C9A84C" stroke-width="1.4" opacity="0.6" fill="none" stroke-linecap="round" filter="url(#glow)"/>
+        <path class="hero-flow-slow" d="M 462 138 C 554 292 532 504 378 594 C 224 684 72 586 65 412 C 58 238 178 108 334 92 C 490 76 562 212 512 342" stroke="#C9A84C" stroke-width="1" opacity="0.38" fill="none" stroke-linecap="round" filter="url(#glow)"/>
+        <circle cx="530"  cy="70"  r="3"   fill="#C9A84C" opacity="0.65"/>
+        <circle cx="25"   cy="455" r="2.5" fill="#C9A84C" opacity="0.45"/>
+        <circle cx="295"  cy="48"  r="2"   fill="#C9A84C" opacity="0.30"/>
+        <circle cx="255"  cy="462" r="2.5" fill="white"   opacity="0.14"/>
+        <circle cx="475"  cy="115" r="2"   fill="#C9A84C" opacity="0.38"/>
+        <circle cx="335"  cy="184" r="3.5" fill="#C9A84C" opacity="0.55" filter="url(#glow)"/>
+        <circle cx="300"  cy="542" r="2.5" fill="#C9A84C" opacity="0.45" filter="url(#glow)"/>
+        <circle cx="82"   cy="396" r="2"   fill="white"   opacity="0.12"/>
+        <circle cx="218"  cy="482" r="1.5" fill="#C9A84C" opacity="0.25"/>
+        <line x1="530" y1="70"  x2="475" y2="115" stroke="#C9A84C" stroke-width="0.5" opacity="0.22"/>
+        <line x1="335" y1="184" x2="300" y2="542" stroke="white"   stroke-width="0.4" opacity="0.07"/>
+        <line x1="255" y1="462" x2="218" y2="482" stroke="#C9A84C" stroke-width="0.5" opacity="0.20"/>
+      </svg>
       <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
         <p class="text-gold text-xs font-semibold tracking-[0.25em] uppercase mb-4 flex items-center gap-2">
           <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
