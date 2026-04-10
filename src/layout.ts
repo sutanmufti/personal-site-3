@@ -69,7 +69,7 @@ export function mountCVBanner(): void {
   banner.className = 'fixed bottom-5 right-5 z-50 flex items-center gap-3 bg-navy border border-gold/40 shadow-lg px-4 py-3 text-sm'
   banner.innerHTML = `
     <i data-lucide="download" class="w-4 h-4 text-gold shrink-0"></i>
-    <a href="/20260401_cv_SutanMufti_contactEmail" download class="text-white font-medium hover:text-gold transition-colors duration-200 whitespace-nowrap">
+    <a href="/20260401_cv_SutanMufti_contactEmail.pdf" download class="text-white font-medium hover:text-gold transition-colors duration-200 whitespace-nowrap">
       Download CV
     </a>
     <button id="cv-banner-dismiss" aria-label="Dismiss" class="ml-1 text-white/30 hover:text-white/70 transition-colors duration-200">
