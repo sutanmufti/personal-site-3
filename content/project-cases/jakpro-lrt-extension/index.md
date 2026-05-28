@@ -1,12 +1,12 @@
 +++
 type        = "projects"
 title       = "LRT Jakarta Manggarai Extension: Boulevard Utara Catchment Simulation"
-date        = "2022-06-01"
+date        = "2026-05-01"
 draft       = false
 category    = "Transportation Modelling"
 client      = "Undisclosed"
 location    = "Jakarta, Indonesia"
-year        = "2022"
+year        = "2026"
 tools       = ["Go", "RAPTOR Algorithm", "QGIS", "Python", "GTFS"]
 solutions   = ["Passenger growth forecasting", "Catchment area simulation", "Unlocked region identification", "TOD development recommendations"]
 +++
