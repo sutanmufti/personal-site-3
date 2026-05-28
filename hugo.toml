@@ -14,6 +14,7 @@ title = 'Sutan Mufti'
   tagline         = "Urban transport specialist and data engineer bridging complex geospatial analysis with actionable infrastructure policy — across the UK and Southeast Asia."
   contact_intro   = "Have a project or collaboration in mind? Let's talk."
   projects_intro  = "Selected infrastructure, transport, and data engineering projects across the UK and Southeast Asia."
+  profile_image   = "/sutan_profile.jpg"
   email           = "upsutan@gmail.com"
   github          = "https://github.com/sutanmufti"
   github_handle   = "sutanmufti"
