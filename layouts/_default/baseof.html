@@ -14,7 +14,7 @@
 
   {{ partial "nav.html" . }}
 
-  <main{{ if not .IsHome }} class="pt-16"{{ end }}>
+  <main>
     {{ block "main" . }}{{ end }}
   </main>
 

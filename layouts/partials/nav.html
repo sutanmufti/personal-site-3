@@ -1,17 +1,3 @@
-<!-- Top bar: hidden on home page (hero covers viewport) -->
-{{ if not .IsHome }}
-<div class="bg-slate-200 text-slate-500 text-xs py-2 hidden md:block">
-  <div class="max-w-7xl mx-auto px-6 flex items-center justify-end gap-6">
-    {{ with .Site.Params.email }}
-    <a href="mailto:{{ . }}" class="hover:text-slate-800 transition-colors">{{ . }}</a>
-    {{ end }}
-    {{ with .Site.Params.linkedin }}
-    <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="hover:text-slate-800 transition-colors">LinkedIn</a>
-    {{ end }}
-  </div>
-</div>
-{{ end }}
-
 <!-- Main nav -->
 <header id="site-header"
   class="fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 {{ if .IsHome }}bg-transparent border-transparent shadow-none{{ else }}bg-white border-b border-slate-200 shadow-sm{{ end }}"

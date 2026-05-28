@@ -1,9 +1,9 @@
 {{ define "main" }}
-<section class="max-w-3xl mx-auto px-6 py-24">
-  <h1 class="text-4xl font-bold tracking-tight text-stone-50 mb-12">{{ .Title }}</h1>
+{{ partial "page-header.html" (dict "label" "taxonomy" "title" .Title) }}
+<section class="max-w-3xl mx-auto px-6 py-20">
   <ul class="space-y-4">
     {{ range .Pages }}
-    <li><a href="{{ .RelPermalink }}" class="text-stone-300 hover:text-amber-400 transition-colors">{{ .Title }}</a></li>
+    <li><a href="{{ .RelPermalink }}" class="text-slate-700 hover:text-blue-700 transition-colors">{{ .Title }}</a></li>
     {{ end }}
   </ul>
 </section>
