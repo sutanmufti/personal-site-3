@@ -1,6 +1,6 @@
 baseURL = 'https://sutan.co.uk/'
 languageCode = 'en-us'
-title = 'Sutan Mufti'
+title = 'Sutan Mufti | Urban Planner'
 
 [permalinks]
   project-cases = '/projects/:contentbasename/'
