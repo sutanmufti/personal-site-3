@@ -2,6 +2,9 @@ baseURL = 'https://sutan.co.uk/'
 languageCode = 'en-us'
 title = 'Sutan Mufti'
 
+[permalinks]
+  project-cases = '/projects/:contentbasename/'
+
 [params]
   author          = "Sutan Mufti"
   description     = "Urban, Transport and Infrastructure Specialist with experience at The World Bank, Amberside Energy, and Enums.id. Bridging geospatial data, transport modelling, and cloud engineering."
@@ -10,6 +13,7 @@ title = 'Sutan Mufti'
   nav_tagline     = "Infrastructure Consultant"
   tagline         = "Urban transport specialist and data engineer bridging complex geospatial analysis with actionable infrastructure policy — across the UK and Southeast Asia."
   contact_intro   = "Have a project or collaboration in mind? Let's talk."
+  projects_intro  = "Selected infrastructure, transport, and data engineering projects across the UK and Southeast Asia."
   email           = "upsutan@gmail.com"
   github          = "https://github.com/sutanmufti"
   github_handle   = "sutanmufti"
