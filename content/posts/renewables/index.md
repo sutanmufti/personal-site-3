@@ -6,6 +6,7 @@ tags        = ['Development', 'Renewables', 'England', 'United Kingdom', 'Scotla
 description = 'CMP434 overhauled how renewable projects connect to the UK grid, replacing first-come-first-served with a readiness-based gated process. Here is what changed and what it means for developers.'
 Summary     = 'CMP434: Implementing Connections Reform replaced the UK grid connection queue with a gated process built around readiness. This article explains the Gate 1 and Gate 2 structure, how queue management milestones work at both transmission and distribution level, and why planning permission is now the critical first step for any developer.'
 featured_image = 'cp2030_neso.png'
+pinned = true
 +++
 
 # Executive Summary
