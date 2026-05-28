@@ -5,7 +5,7 @@ title       = 'Public Transportation Range of Service: Identifying Underserved C
 tags        = ['GIS', 'Jakarta', 'Urban Planning', 'Public Transportation', 'Spatial Analysis', 'Indonesia']
 description = 'Using GIS and network analysis to identify which Jakarta residents fall outside the 700m walking distance to public transportation, and what this means for urban planning.'
 Summary     = 'Around 827,594 Jakarta citizens live beyond the 700m walking threshold to public transportation. This article uses GIS and road network analysis to map the unserved population and argues for integrated transportation and spatial planning.'
-featured_image = ''
+featured_image = '1_hT1ZPgVHWkCNxGc1NSBVOw.jpg'
 +++
 
 *Article was published first on [Towards Data Science in 2020](https://medium.com/data-science/public-transportation-range-of-service-identifying-the-unserved-citizens-in-jakarta-city-eaf8f3446fce)*.
