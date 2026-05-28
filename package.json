@@ -20,6 +20,7 @@
   "homepage": "https://github.com/sutanmufti/personal-site-3#readme",
   "dependencies": {
     "@tailwindcss/postcss": "^4.3.0",
+    "lucide": "^1.16.0",
     "postcss": "^8.5.15",
     "tailwindcss": "^4.3.0"
   },
