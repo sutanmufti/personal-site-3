@@ -21,12 +21,18 @@ The central question: how dramatically would linking to Manggarai change the eff
 
 To answer this, I implemented the **RAPTOR (Round-Based Public Transit Optimised Router) algorithm** from scratch in Go. RAPTOR processes GTFS timetable data and computes Pareto-optimal journeys across the network in discrete rounds, where each round *K* identifies the fastest path using exactly *K* trips, without requiring a priority queue, making it exceptionally fast for bulk simulation.
 
+![](raptor_framework.png)
+
 Key workstreams:
 
 - **Bespoke routing engine**: Built the RAPTOR implementation in Go to handle the full GTFS network, enabling rapid simulation across multiple time windows and transfer parameters.
 - **Catchment simulation**: Used Python to bulk-run simulations across dozens of origin stations and time scenarios, generating isochrone datasets representing the network's spatial reach before and after the extension.
 - **Cartographic analysis**: Visualised results in QGIS to map the expansion of 30-minute catchment zones, identifying specific urban areas newly brought within reach of Central Jakarta.
 - **TOD opportunity mapping**: Translated catchment data into station-level development recommendations, identifying Boulevard Utara as a high-potential Transit-Oriented Development node.
+
+The following figure illustrates the catchment area improvement when the network is extended to Manggarai Station.
+
+![](analysis_transit.png)
 
 ## Outcome
 
