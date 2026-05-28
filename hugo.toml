@@ -28,18 +28,22 @@ expertise = [
 ]
 
 [[params.services]]
+  icon        = "route"
   title       = "Transport Modelling & Appraisal"
   description = "Feasibility studies and transport appraisal for BRT, LRT, and urban mobility projects. Experienced in GTFS modelling, passenger forecasting, and financial analysis for major infrastructure programmes."
 
 [[params.services]]
+  icon        = "layers"
   title       = "Geospatial Data Engineering"
   description = "End-to-end spatial data pipelines processing hundreds of GBs of geospatial data. Python (ArcPy, GeoPandas), PostGIS, Apache Spark, and cloud-native architectures on GCP."
 
 [[params.services]]
+  icon        = "zap"
   title       = "Infrastructure & Energy Analytics"
   description = "Site appraisal, energy supply/demand analysis, and asset performance modelling for solar and battery storage projects. Cloud architecture for renewable infrastructure investment decisions."
 
 [[params.services]]
+  icon        = "cloud-cog"
   title       = "Cloud & DevOps for Data Systems"
   description = "CI/CD pipelines, cloud infrastructure procurement, and production monitoring. Full-stack awareness applied to data and GIS product delivery."
 

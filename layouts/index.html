@@ -58,8 +58,8 @@
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
     {{ range . }}
     <div class="group p-8 border border-slate-200 rounded-lg hover:border-blue-700 hover:shadow-md transition-all">
-      <div class="w-10 h-10 rounded bg-blue-50 flex items-center justify-center mb-6 group-hover:bg-blue-700 transition-colors">
-        <svg class="text-blue-700 group-hover:text-white transition-colors" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      <div class="w-10 h-10 rounded bg-blue-50 flex items-center justify-center mb-6 group-hover:bg-blue-700 transition-colors [&_svg]:text-blue-700 group-hover:[&_svg]:text-white [&_svg]:transition-colors">
+        <i data-lucide="{{ .icon }}" class="w-5 h-5"></i>
       </div>
       <h3 class="text-lg font-bold text-slate-900 mb-3">{{ .title }}</h3>
       <p class="text-sm text-slate-500 leading-relaxed">{{ .description }}</p>
