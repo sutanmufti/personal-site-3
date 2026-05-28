@@ -1,22 +1,25 @@
 {{ define "main" }}
-<article class="max-w-3xl mx-auto px-6 py-24">
-  <header class="mb-12">
-    <p class="font-mono text-xs text-amber-400 tracking-widest uppercase mb-4">
-      {{ .Date.Format "2 January 2006" }}
-    </p>
-    <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-stone-50 leading-tight">{{ .Title }}</h1>
-  </header>
 
-  <div class="prose prose-stone prose-invert prose-lg max-w-none
-    prose-headings:font-bold prose-headings:tracking-tight
-    prose-a:text-amber-400 prose-a:no-underline hover:prose-a:underline
-    prose-code:text-amber-300 prose-code:bg-stone-900 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm
-    prose-pre:bg-stone-900 prose-pre:border prose-pre:border-stone-800">
+<section class="bg-slate-900 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-400 mb-4">{{ .Date.Format "2 January 2006" }}</p>
+    <h1 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight max-w-3xl">{{ .Title }}</h1>
+  </div>
+</section>
+
+<article class="max-w-3xl mx-auto px-6 py-20">
+  <div class="prose prose-slate prose-lg max-w-none
+    prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-slate-900
+    prose-a:text-blue-700 prose-a:no-underline hover:prose-a:underline
+    prose-strong:text-slate-900
+    prose-code:text-blue-700 prose-code:bg-blue-50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm
+    prose-pre:bg-slate-900 prose-pre:text-slate-100 prose-pre:border prose-pre:border-slate-700">
     {{ .Content }}
   </div>
 
-  <div class="mt-16 pt-8 border-t border-stone-800">
-    <a href="/posts" class="text-sm text-stone-500 hover:text-stone-300 transition-colors font-mono">← all posts</a>
+  <div class="mt-16 pt-8 border-t border-slate-200">
+    <a href="/posts" class="text-sm font-semibold text-blue-700 hover:text-blue-900 transition-colors">← All posts</a>
   </div>
 </article>
+
 {{ end }}
