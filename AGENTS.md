@@ -16,4 +16,5 @@ This site is a blogsite where Sutan can pour his mind and share with the world. 
 
 ## Techniques
 
-Use tailwind to paint the website.
+- Use `tailwind` to paint the website.
+- user `lucide` as the icon library.
