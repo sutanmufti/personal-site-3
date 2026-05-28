@@ -2,6 +2,16 @@
 
 {{ partial "page-header.html" (dict "label" (.Date.Format "2 January 2006") "title" .Title) }}
 
+{{ with .Params.featured_image }}
+{{ $img := $.Resources.GetMatch . }}
+{{ if $img }}
+<div class="max-w-4xl mx-auto px-6 -mt-8">
+  <img src="{{ $img.RelPermalink }}" alt="{{ $.Title }}"
+    class="w-full max-h-[480px] object-cover rounded-lg shadow-lg" />
+</div>
+{{ end }}
+{{ end }}
+
 <article class="max-w-3xl mx-auto px-6 py-20">
   <div class="prose prose-slate prose-lg max-w-none
     prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-slate-900
