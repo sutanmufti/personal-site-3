@@ -4,7 +4,7 @@ This is Sutan Mufti's personal site
 
 ## About the owner of this repository
 
-Sutan Ashari Mufti is an infrastructure and urban planning consultant based in Bandung, Indonesia, with an MSc in Infrastructure Planning, Appraisal and Development from UCL and a BSc in Urban and Regional Planning from Bandung Institute of Technology. His work spans transport planning, project appraisal, and geospatial analysis, with experience including World Bank BRT feasibility studies in Indonesia and energy infrastructure development in the UK. He is an advisor and investor at Enums.id, a GIS software company in Bandung. He is proficient in GIS tools, full-stack web development (Go, SvelteKit, Python), and cloud infrastructure (GCP), which he applies in service of planning and advisory work. He writes in British English and prefers concise, direct professional prose.
+Sutan Mufti is an infrastructure and urban planning consultant based in Bandung, Indonesia, with an MSc in Infrastructure Planning, Appraisal and Development from UCL and a BSc in Urban and Regional Planning from Bandung Institute of Technology. His work spans transport planning, project appraisal, and geospatial analysis, with experience including World Bank BRT feasibility studies in Indonesia and energy infrastructure development in the UK. He is an advisor and investor at Enums.id, a GIS software company in Bandung. He is proficient in GIS tools, full-stack web development (Go, SvelteKit, Python), and cloud infrastructure (GCP), which he applies in service of planning and advisory work. He writes in British English and prefers concise, direct professional prose.
 
 ## What this Site is About
 
