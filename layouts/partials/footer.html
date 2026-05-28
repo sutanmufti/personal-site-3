@@ -30,9 +30,15 @@
     </div>
   </div>
   <div class="border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between text-xs text-slate-600">
-      <span>© {{ now.Year }} {{ .Site.Params.author | default .Site.Title }}. All rights reserved.</span>
-      <span>Built with Hugo</span>
+    <div class="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-slate-600">
+      <span>© {{ now.Year }} {{ .Site.Params.author | default .Site.Title }}</span>
+      <span class="text-slate-700">
+        Site code: <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer" class="hover:text-slate-400 transition-colors">MIT</a>
+        &middot;
+        Written content: <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer" class="hover:text-slate-400 transition-colors">CC BY-NC 4.0</a>
+        &middot;
+        Images: All rights reserved
+      </span>
     </div>
   </div>
 </footer>
