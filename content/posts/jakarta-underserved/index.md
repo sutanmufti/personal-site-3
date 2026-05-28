@@ -1,6 +1,6 @@
 +++
 date        = '2020-07-04T17:18:24+07:00'
-draft       = true
+draft       = false
 title       = 'Public Transportation Range of Service: Identifying Underserved Citizens in Jakarta, Indonesia'
 tags        = ['GIS', 'Jakarta', 'Urban Planning', 'Public Transportation', 'Spatial Analysis', 'Indonesia']
 description = 'Using GIS and network analysis to identify which Jakarta residents fall outside the 700m walking distance to public transportation, and what this means for urban planning.'
