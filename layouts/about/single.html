@@ -1,12 +1,6 @@
 {{ define "main" }}
 
-<!-- Page header -->
-<section class="bg-slate-900 text-white">
-  <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
-    <p class="text-xs font-semibold uppercase tracking-widest text-blue-400 mb-4">About</p>
-    <h1 class="text-4xl md:text-5xl font-bold tracking-tight max-w-2xl">{{ .Title }}</h1>
-  </div>
-</section>
+{{ partial "page-header.html" (dict "label" "About" "title" .Title) }}
 
 <!-- Content -->
 <section class="max-w-7xl mx-auto px-6 py-20">

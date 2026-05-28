@@ -1,11 +1,6 @@
 {{ define "main" }}
 
-<section class="bg-slate-900 text-white">
-  <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
-    <p class="text-xs font-semibold uppercase tracking-widest text-blue-400 mb-4">{{ .Date.Format "2 January 2006" }}</p>
-    <h1 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight max-w-3xl">{{ .Title }}</h1>
-  </div>
-</section>
+{{ partial "page-header.html" (dict "label" (.Date.Format "2 January 2006") "title" .Title) }}
 
 <article class="max-w-3xl mx-auto px-6 py-20">
   <div class="prose prose-slate prose-lg max-w-none

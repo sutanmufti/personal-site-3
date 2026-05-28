@@ -1,15 +1,6 @@
 {{ define "main" }}
 
-<!-- Page header -->
-<section class="bg-slate-900 text-white">
-  <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
-    <p class="text-xs font-semibold uppercase tracking-widest text-blue-400 mb-4">Contact</p>
-    <h1 class="text-4xl md:text-5xl font-bold tracking-tight">{{ .Title }}</h1>
-    <p class="mt-4 text-slate-300 text-lg max-w-xl">
-      {{ $.Site.Params.contact_intro }}
-    </p>
-  </div>
-</section>
+{{ partial "page-header.html" (dict "label" "Contact" "title" .Title "subtitle" $.Site.Params.contact_intro) }}
 
 <!-- Contact content -->
 <section class="max-w-7xl mx-auto px-6 py-20">
