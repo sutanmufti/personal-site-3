@@ -1,0 +1,29 @@
+{
+  "name": "personal-site-3",
+  "version": "1.0.0",
+  "description": "Static page of sutan.co.uk. Built with hugo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sutanmufti/personal-site-3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sutanmufti/personal-site-3/issues"
+  },
+  "homepage": "https://github.com/sutanmufti/personal-site-3#readme",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "postcss-cli": "^11.0.1"
+  }
+}

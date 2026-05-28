@@ -1,3 +1,15 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+baseURL = 'https://sutan.co.uk/'
+languageCode = 'en-us'
+title = 'sutan.co.uk'
+
+[params]
+  author          = "Sutan Mufti"
+  description     = "Software engineer. Writing about code, systems, and ideas."
+  hero_name       = "Sutan Mufti"
+  tagline         = "Software engineer. Writing about code, systems, and ideas."
+  contact_intro   = "Reach out — happy to chat about projects, ideas, or opportunities."
+  email           = "muftinatus@gmail.com"
+  github          = "https://github.com/sutanmufti"
+  github_handle   = "sutanmufti"
+  linkedin        = "https://linkedin.com/in/sutanmufti"
+  linkedin_handle = "sutanmufti"

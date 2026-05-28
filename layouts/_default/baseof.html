@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang | default "en" }}" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+  {{ $css := resources.Get "css/main.css" | css.PostCSS }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+</head>
+<body class="h-full bg-stone-950 text-stone-100 antialiased">
+  <header class="fixed top-0 inset-x-0 z-50 border-b border-stone-800/60 bg-stone-950/80 backdrop-blur-sm">
+    <nav class="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="font-mono text-sm font-semibold tracking-tight text-stone-100 hover:text-amber-400 transition-colors">
+        {{ .Site.Title }}
+      </a>
+      <ul class="flex items-center gap-6 text-sm text-stone-400">
+        <li><a href="/posts" class="hover:text-stone-100 transition-colors">writing</a></li>
+        <li><a href="/about" class="hover:text-stone-100 transition-colors">about</a></li>
+        <li><a href="/contact" class="hover:text-stone-100 transition-colors">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pt-16">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="border-t border-stone-800/60 mt-24">
+    <div class="max-w-3xl mx-auto px-6 py-8 flex items-center justify-between text-xs text-stone-600">
+      <span>© {{ now.Year }} {{ .Site.Params.author | default .Site.Title }}</span>
+      <span class="font-mono">built with hugo</span>
+    </div>
+  </footer>
+</body>
+</html>
