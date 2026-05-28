@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang | default "en" }}" class="h-full scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+  {{ $css := resources.Get "css/main.css" | css.PostCSS }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+  {{ $js := resources.Get "js/main.js" | js.Build (dict "minify" true) }}
+  <script src="{{ $js.RelPermalink }}" defer></script>
+</head>
+<body class="h-full bg-white text-slate-800 antialiased font-sans">
+
+  {{ partial "nav.html" . }}
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+
+</body>
+</html>

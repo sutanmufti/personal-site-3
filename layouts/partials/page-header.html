@@ -1,0 +1,9 @@
+<section class="bg-slate-900 text-white">
+  <div class="max-w-7xl mx-auto px-6 pt-28 pb-16 md:pt-36 md:pb-20">
+    <p class="text-xs font-semibold uppercase tracking-widest text-blue-400 mb-4">{{ .label }}</p>
+    <h1 class="text-4xl md:text-5xl font-bold tracking-tight leading-tight max-w-3xl">{{ .title }}</h1>
+    {{ with .subtitle }}
+    <p class="mt-4 text-slate-300 text-lg max-w-xl">{{ . }}</p>
+    {{ end }}
+  </div>
+</section>

@@ -1,20 +1,31 @@
 {
-  "name": "showcase",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "personal-site-3",
+  "version": "1.0.0",
+  "description": "Static page of sutan.co.uk. Built with hugo.",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sutanmufti/personal-site-3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sutanmufti/personal-site-3/issues"
+  },
+  "homepage": "https://github.com/sutanmufti/personal-site-3#readme",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.0",
+    "lucide": "^1.16.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
-    "typescript": "~5.9.3",
-    "vite": "^7.3.1"
-  },
-  "dependencies": {
-    "@tailwindcss/vite": "^4.2.1",
-    "lucide": "^0.577.0",
-    "tailwindcss": "^4.2.1"
+    "@tailwindcss/typography": "^0.5.19",
+    "postcss-cli": "^11.0.1"
   }
 }
