@@ -32,7 +32,7 @@
       </div>
       <div>
         <p class="text-xs text-stone-500 font-mono mb-0.5">github</p>
-        <p class="text-sm text-stone-200 group-hover:text-amber-400 transition-colors">github.com/{{ .Site.Params.github_handle | default "..." }}</p>
+        <p class="text-sm text-stone-200 group-hover:text-amber-400 transition-colors">github.com/{{ $.Site.Params.github_handle | default "..." }}</p>
       </div>
     </a>
     {{ end }}
@@ -45,7 +45,7 @@
       </div>
       <div>
         <p class="text-xs text-stone-500 font-mono mb-0.5">linkedin</p>
-        <p class="text-sm text-stone-200 group-hover:text-amber-400 transition-colors">{{ .Site.Params.linkedin_handle | default "linkedin" }}</p>
+        <p class="text-sm text-stone-200 group-hover:text-amber-400 transition-colors">{{ $.Site.Params.linkedin_handle | default "linkedin" }}</p>
       </div>
     </a>
     {{ end }}
