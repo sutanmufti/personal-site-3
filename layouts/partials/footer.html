@@ -1,0 +1,38 @@
+<footer class="bg-slate-900 text-slate-300 mt-24">
+  <div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div>
+      <p class="text-white font-bold text-lg mb-2">{{ .Site.Params.author | default .Site.Title }}</p>
+      <p class="text-slate-400 text-sm leading-relaxed">{{ .Site.Params.description }}</p>
+    </div>
+    <div>
+      <p class="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">Navigation</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+        <li><a href="/about" class="hover:text-white transition-colors">About</a></li>
+        <li><a href="/projects" class="hover:text-white transition-colors">Projects</a></li>
+        <li><a href="/posts" class="hover:text-white transition-colors">Insights</a></li>
+        <li><a href="/contact" class="hover:text-white transition-colors">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">Contact</p>
+      <ul class="space-y-2 text-sm">
+        {{ with .Site.Params.email }}
+        <li><a href="mailto:{{ . }}" class="hover:text-white transition-colors">{{ . }}</a></li>
+        {{ end }}
+        {{ with .Site.Params.github }}
+        <li><a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">GitHub</a></li>
+        {{ end }}
+        {{ with .Site.Params.linkedin }}
+        <li><a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">LinkedIn</a></li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between text-xs text-slate-600">
+      <span>© {{ now.Year }} {{ .Site.Params.author | default .Site.Title }}. All rights reserved.</span>
+      <span>Built with Hugo</span>
+    </div>
+  </div>
+</footer>
