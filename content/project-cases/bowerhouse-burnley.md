@@ -36,7 +36,6 @@ Amberside subsequently launched a public consultation in August 2024, seeking co
 My analytical work underpinned the early-stage appraisal that made this project viable for progression to consultation:
 
 - **Grid capacity screening**: Used cloud architecture and large-scale spatial datasets to identify substation capacity and circuit proximity, determining connection viability before significant capital was committed.
-- **Economic appraisal**: Built financial models assessing revenue potential under different dispatch strategies and grid service markets, producing decision-ready outputs for the investment committee.
 - **Cloud data infrastructure**: Designed and maintained the Azure-based data architecture, processing gigabytes of spatial and time-series data automatically, used across multiple projects in the Amberside portfolio.
 
 ## Outcome
