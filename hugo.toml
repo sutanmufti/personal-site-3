@@ -1,15 +1,75 @@
 baseURL = 'https://sutan.co.uk/'
 languageCode = 'en-us'
-title = 'sutan.co.uk'
+title = 'Sutan Mufti'
 
 [params]
   author          = "Sutan Mufti"
-  description     = "Software engineer. Writing about code, systems, and ideas."
+  description     = "Urban, Transport and Infrastructure Specialist with experience at The World Bank, Amberside Energy, and Enums.id. Bridging geospatial data, transport modelling, and cloud engineering."
   hero_name       = "Sutan Mufti"
-  tagline         = "Software engineer. Writing about code, systems, and ideas."
-  contact_intro   = "Reach out — happy to chat about projects, ideas, or opportunities."
-  email           = "muftinatus@gmail.com"
+  hero_label      = "Urban, Transport & Infrastructure Specialist"
+  nav_tagline     = "Infrastructure Consultant"
+  tagline         = "Urban transport specialist and data engineer bridging complex geospatial analysis with actionable infrastructure policy — across the UK and Southeast Asia."
+  contact_intro   = "Have a project or collaboration in mind? Let's talk."
+  email           = "upsutan@gmail.com"
   github          = "https://github.com/sutanmufti"
   github_handle   = "sutanmufti"
   linkedin        = "https://linkedin.com/in/sutanmufti"
-  linkedin_handle = "sutanmufti"
+  linkedin_handle = "Sutan Mufti"
+
+expertise = [
+  "Urban Transport Modelling",
+  "Infrastructure Appraisal",
+  "Geospatial Analytics",
+  "Python & SQL",
+  "GCP / Cloud Engineering",
+  "Transit-Oriented Development",
+  "QGIS / ArcGIS",
+  "Apache Spark",
+]
+
+[[params.services]]
+  title       = "Transport Modelling & Appraisal"
+  description = "Feasibility studies and transport appraisal for BRT, LRT, and urban mobility projects. Experienced in GTFS modelling, passenger forecasting, and financial analysis for major infrastructure programmes."
+
+[[params.services]]
+  title       = "Geospatial Data Engineering"
+  description = "End-to-end spatial data pipelines processing hundreds of GBs of geospatial data. Python (ArcPy, GeoPandas), PostGIS, Apache Spark, and cloud-native architectures on GCP."
+
+[[params.services]]
+  title       = "Infrastructure & Energy Analytics"
+  description = "Site appraisal, energy supply/demand analysis, and asset performance modelling for solar and battery storage projects. Cloud architecture for renewable infrastructure investment decisions."
+
+[[params.services]]
+  title       = "Cloud & DevOps for Data Systems"
+  description = "CI/CD pipelines, cloud infrastructure procurement, and production monitoring. Full-stack awareness applied to data and GIS product delivery."
+
+skills = [
+  "Urban Transport Modelling",
+  "Infrastructure Appraisal & Feasibility",
+  "Transit-Oriented Development (TOD)",
+  "Financial Modelling",
+  "Python (ArcPy, GeoPandas, Data Science)",
+  "SQL (PostgreSQL / PostGIS)",
+  "QGIS / ArcGIS",
+  "Apache Spark",
+  "Google Cloud Platform (GCP)",
+  "Automation & Data Pipelines",
+  "WebGIS",
+  "DevOps for Data Systems",
+]
+
+[[params.stats]]
+  value = "The World Bank"
+  label = "Transport Consultant, Jakarta"
+
+[[params.stats]]
+  value = "Amberside Energy"
+  label = "Senior Manager (Software), London"
+
+[[params.stats]]
+  value = "UCL"
+  label = "MSc Infrastructure Planning & Development"
+
+[params.availability]
+  status = "Open to consulting engagements"
+  note   = "Available for project-based and advisory work in urban transport, infrastructure, and geospatial data."
