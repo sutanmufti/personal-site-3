@@ -1,6 +1,6 @@
 +++
 date        = '2026-05-28T14:52:34+07:00'
-draft       = true
+draft       = false
 title       = 'The UK Grid Connection Reform: CMP434 and What It Means for UK Developers'
 tags        = ['Development', 'Renewables', 'England', 'United Kingdom', 'Scotland', 'Wales', 'Renewable Energy', 'Solar', 'Wind']
 description = 'CMP434 overhauled how renewable projects connect to the UK grid, replacing first-come-first-served with a readiness-based gated process. Here is what changed and what it means for developers.'
