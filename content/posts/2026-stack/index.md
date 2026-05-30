@@ -10,7 +10,24 @@ featured_image = 'arcgis_pro.jpg'
 
 # Executive Summary
 
+This article reviews six geospatial analytics tools across two categories: the classic stacks and the modern stacks. Each tool is assessed on its strengths, weaknesses, and the scenarios where it is the right choice. The core argument is that these tools are complementary, not competing: the right stack depends on your scale, budget, team skills, and where your data lives.
 
+**Classic Stacks**
+
+- **ArcGIS Pro**: The enterprise standard. Best when your organisation is already in the ESRI ecosystem, requires vendor support, and needs to publish maps through ArcGIS Online. Windows only, and expensive.
+- **QGIS**: The open-source workhorse. Best for desktop GIS work across any operating system, without licensing costs or vendor lock-in. Integrates well with GDAL and PostGIS.
+- **PostGIS**: The spatial database backbone. Best when you need a centralised, multi-user spatial database to power web applications or enterprise GIS platforms. Requires SQL proficiency and server administration.
+
+**Modern Stacks**
+
+- **DuckDB**: The fast local analyst. Best for solo data science workflows, rapid prototyping, and querying spatial files directly (Parquet, GeoJSON, CSV) without any server setup.
+- **Apache Sedona**: The big data engine. Best when your dataset reaches a scale that a single machine cannot handle: billions of rows, distributed cluster infrastructure, and both vector and raster workloads in one framework.
+- **CARTO**: The cloud-native platform. Best when your data already lives in a cloud data warehouse (BigQuery, Snowflake, Redshift) and you need spatial analytics accessible to non-GIS experts, with managed infrastructure and no data movement.
+
+No single tool wins across all scenarios, but knowing what each does well allows you to compose them into a robust spatial analytics pipeline.
+
+
+---
 
 # Introduction
 
