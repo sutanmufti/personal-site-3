@@ -18,3 +18,18 @@ Built with [Hugo](https://gohugo.io/) and [Tailwind CSS v4](https://tailwindcss.
 - **Lucide** — icon library
 - **GitHub Actions** — CI/CD pipeline
 - **GitHub Pages** — hosting
+
+## Analytics and Privacy
+
+The site uses **Google Analytics 4** for traffic analysis, implemented with **Google Consent Mode v2**. All analytics signals default to denied on page load. Analytics only activates if the visitor explicitly accepts via the cookie consent banner.
+
+Consent preference is stored in browser local storage under the key `cookie_consent`. No tracking cookies are set before consent is given. See [`content/privacy/index.md`](content/privacy/index.md) for the full privacy policy.
+
+### Cookie Consent Implementation
+
+| File | Purpose |
+|------|---------|
+| `layouts/_default/baseof.html` | Consent Mode v2 init script in `<head>`; banner partial included before `</body>` |
+| `layouts/partials/cookie-consent.html` | Cookie banner UI (Accept / Decline) |
+| `assets/js/main.js` | Consent logic: show banner, handle clicks, update gtag, persist to localStorage |
+| `content/privacy/index.md` | Privacy policy page |
