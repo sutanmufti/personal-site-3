@@ -1,6 +1,6 @@
 +++
 date        = '2026-05-30T09:39:12+07:00'
-draft       = true
+draft       = false
 title       = 'Modern 2026 Geospatial Analytics Stack: Which to Use?'
 tags        = ['geospatial', 'spatial data science', 'urban analytics', 'GIS']
 description = 'ArcGIS Pro, QGIS, PostGIS, DuckDB, Apache Sedona, and CARTO reviewed: what each does well, where it falls short, and when to use it.'
