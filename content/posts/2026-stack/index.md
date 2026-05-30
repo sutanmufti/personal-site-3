@@ -3,8 +3,8 @@ date        = '2026-05-30T09:39:12+07:00'
 draft       = true
 title       = 'Modern 2026 Geospatial Analytics Stack: Which to Use?'
 tags        = ['geospatial', 'spatial data science', 'urban analytics', 'GIS']
-description = 'A spatial data scientist guide on which tool to choose to analyse geospatial data'
-Summary     = 'A spatial data scientist guide on which tool to choose to analyse geospatial data'
+description = 'ArcGIS Pro, QGIS, PostGIS, DuckDB, Apache Sedona, and CARTO reviewed: what each does well, where it falls short, and when to use it.'
+Summary     = 'A practical guide to six geospatial analytics tools in 2026, covering the classic desktop and database stacks alongside modern distributed and cloud-native platforms.'
 featured_image = 'SEA.png'
 +++
 
