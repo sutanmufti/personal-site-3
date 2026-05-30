@@ -8,14 +8,17 @@ Summary     = 'A spatial data scientist guide on which tool to choose to analyse
 featured_image = 'arcgis_pro.jpg'
 +++
 
+# Executive Summary
+
+
 
 # Introduction
 
-The geospatial analytics world has come to a more inclusive and powerful state. In the 1990s, there are only limited propietery software products to choose on to solve GIS problems. Nowadays, open-source software has prevailed taking on paid software as a worthy and robust alternatives; most notably, QGIS. "Alternative" is an understatement; it is one of the main options. 
+The geospatial analytics world has come to a more inclusive and powerful state. In the 1990s, there were only limited proprietary software products to choose from to solve GIS problems. Nowadays, open-source software has prevailed taking on paid software as worthy and robust alternatives; most notably, QGIS. "Alternative" is an understatement; it is one of the main options. 
 
-The progress towards inclusivity has not stopped; it gets better and it is impressive. I have been in the GIS world for almost 10 years now and things have changed for good. In 2026, I decided to catch up with the latest tools to see what we have for spatial data scientists. Some tools I have played around with have impressed me. It got me thinking: "I am left out and I need to adopt this new tools".
+The progress towards inclusivity has not stopped; it gets better and it is impressive. I have been in the GIS world for almost 10 years now and things have changed for good. In 2026, I decided to catch up with the latest tools to see what we have for spatial data scientists. Some tools I have played around with have impressed me. It got me thinking: "I am left out and I need to adopt these new tools".
 
-I would like to share some of the tools I have played around with with some thoughts.
+I would like to share some of the tools I have played around with, with some thoughts.
 
 
 # The Classic Stacks
@@ -28,6 +31,11 @@ The classic stacks are software stacks that have proved themselves for years. I'
 
 
 ## ArcGIS Pro
+
+When to use?
+- Your organisation runs an existing ESRI ecosystem and needs seamless integration across products.
+- You need enterprise support, guaranteed uptime, and vendor-backed training for mission-critical GIS work.
+- Publishing interactive maps to ArcGIS Online for internal or public consumption is a core requirement.
 
 
 [![](arcgis_pro.jpg)](https://www.esri.com/about/newsroom/insider/understanding-arcgis-pro)
@@ -51,6 +59,11 @@ ArcGIS Pro is a professional desktop geographic information system application d
 
 ## QGIS
 
+When to use?
+- You need a full-featured desktop GIS without licensing costs or vendor lock-in.
+- Your team works across multiple operating systems, including Linux and macOS.
+- You want tight integration with open-source tools such as GDAL and PostGIS, or need community plugins for specialised workflows.
+
 [![](qgis.png)](https://docs.qgis.org/latest/en/docs/user_manual/introduction/qgis_gui.html)
 
 QGIS is a free and open-source desktop geographic information system application that provides data viewing, editing, and analysis capabilities. It operates across multiple operating systems and supports numerous vector, raster, and database formats through its flexible plugin architecture. Because it is community-driven, the software offers a cost-effective and highly customisable alternative for individuals and organisations looking to perform complex spatial analysis and create professional maps without licensing constraints.
@@ -70,6 +83,11 @@ QGIS is a free and open-source desktop geographic information system application
 | Integrates seamlessly with open-source tools such as GDAL/Postgis ||
 
 ## Postgis
+
+When to use?
+- You need a spatial database backend for web applications or GIS platforms with concurrent multi-user access.
+- Your analysis demands complex SQL-native spatial queries on large, structured datasets stored centrally.
+- You are already running PostgreSQL and want to extend it with robust geographic capabilities without additional infrastructure.
 
 [![](postgis.png)](http://postgis.net/workshops/postgis-intro/geometries.html)
 
@@ -101,6 +119,11 @@ It's 2026 and some spatial analytic tools have emerged and rised to prominence. 
 
 ## DuckDB
 
+When to use?
+- You are doing local spatial analysis or rapid prototyping and want zero server setup overhead.
+- Your workflow involves querying files directly: Parquet, GeoJSON, or CSV, without a formal import step.
+- You are working within a Python or R data science environment and need fast, SQL-native spatial analytics on a single machine.
+
 [![](duckdb.png)](https://duckdb.org/2025/03/12/duckdb-ui)
 
 DuckDB is an open-source, embedded analytical database management system designed to execute complex queries with exceptional speed. It extends traditional relational database capabilities by providing native support for spatial data through its spatial extension, allowing users to efficiently query and process geographic objects like points, lines, and polygons. Because it operates in-process without the overhead of a separate server, it is highly optimised for local data analysis, data science workflows, and fast prototyping. This makes it an invaluable tool for developers and analysts who need to perform rapid spatial analytics on large datasets directly within their local applications.
@@ -120,6 +143,11 @@ DuckDB is an open-source, embedded analytical database management system designe
 | Highly portable single-file database architecture that is easy to share and distribute ||
 
 ## Apache Sedona
+
+When to use?
+- Your dataset is at a scale where PostGIS or DuckDB can no longer keep up: billions of rows, continental or global coverage.
+- You are building enterprise spatial data pipelines on distributed cluster infrastructure such as Apache Spark or a cloud lakehouse.
+- Your workload involves both large vector datasets and satellite or raster imagery that must be processed in a single, unified framework.
 
 [![](sedona.png)](https://github.com/apache/sedona)
 
@@ -142,6 +170,11 @@ Apache Sedona is an open-source, distributed computing system designed to proces
 
 ## Carto
 
+When to use?
+- Your enterprise data already lives in a cloud data warehouse such as BigQuery, Snowflake, or Redshift, and you want spatial analytics without moving it.
+- Your team includes non-GIS experts who need accessible, low-code tools to build maps and run location intelligence workflows.
+- You need to rapidly deploy production-ready web maps or dashboards and have the budget for a managed SaaS platform.
+
 [![](carto.webp)](https://carto.com/platform/)
 
 CARTO is a cloud-native location intelligence and spatial analytics platform designed to build, visualise, and analyse geographic data at an enterprise scale. Moving away from traditional GIS architectures, it operates as a commercial, fully managed software-as-a-service (SaaS) that connects directly to modern cloud data warehouses and lakehouses, such as Snowflake, Google BigQuery, Databricks, and Amazon Redshift. By pushing all spatial computations directly to the data tier via pushdown SQL, it eliminates the need to extract or move massive datasets. The platform combines low-code visual workflow builders with powerful developer toolkits and AI-driven geographic models, making it an essential tool for organisations looking to operationalise business data and uncover spatial insights directly within their centralised cloud infrastructure.
@@ -159,3 +192,15 @@ CARTO is a cloud-native location intelligence and spatial analytics platform des
 | Rapid deployment of production-ready web maps and custom data dashboards using framework-agnostic developer tools | Not built for deep, desktop-style cartography or advanced manual geometry editing compared to QGIS or ArcGIS Pro |
 | Fully integrated with modern AI frameworks, MCP servers, and autonomous agents for natural-language spatial queries | Heavy reliance on the host data warehouse's underlying spatial processing capabilities and limitations |
 | Eliminates data silos and complex ETL pipelines by keeping enterprise data centralised and secure within the cloud ||
+
+
+# Closing
+
+The geospatial toolkit in 2026 is broader and more capable than it has ever been, which makes the question of "which tool?" more important than ever. There is no single right answer: the right stack depends on your data scale, your team's technical depth, your budget, and where your data lives.
+
+For most desktop GIS work, QGIS remains the default choice, free, fast, and capable. ArcGIS Pro earns its place in organisations that are already embedded in the ESRI ecosystem or require guaranteed enterprise support. PostGIS is still the backbone of any serious spatial web application or multi-user editing environment. For local data science workflows and ad-hoc analysis, DuckDB has become genuinely hard to ignore. When your data grows to a scale that a single machine cannot handle, Apache Sedona is the natural step up. And if your organisation's data already lives in a cloud data warehouse and you need spatial analytics accessible to a wider team, CARTO makes a compelling case.
+
+The best approach is not to pick one and ignore the rest. These tools are largely complementary. A robust spatial data pipeline might ingest with PostGIS, analyse at scale with Sedona, prototype quickly with DuckDB, and surface results through QGIS or CARTO. Understanding what each tool does well, and where it falls short, is what allows you to compose them effectively.
+
+The barrier to entry for powerful spatial analytics has never been lower. The only real mistake is using the wrong tool for the job.
+
