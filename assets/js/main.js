@@ -55,3 +55,25 @@ if (header && header.dataset.transparent) {
     window.scrollY > 10 ? makeOpaque() : makeTransparent();
   }, { passive: true });
 }
+
+// Cookie consent
+const CONSENT_KEY = 'cookie_consent';
+const banner = document.getElementById('cookie-banner');
+
+function updateConsent(value) {
+  gtag('consent', 'update', {
+    analytics_storage: value,
+    ad_storage: value,
+    ad_user_data: value,
+    ad_personalization: value,
+  });
+  localStorage.setItem(CONSENT_KEY, value);
+  banner.classList.add('hidden');
+}
+
+if (banner && !localStorage.getItem(CONSENT_KEY)) {
+  banner.classList.remove('hidden');
+}
+
+document.getElementById('cookie-accept')?.addEventListener('click', () => updateConsent('granted'));
+document.getElementById('cookie-decline')?.addEventListener('click', () => updateConsent('denied'));
