@@ -5,6 +5,9 @@ title = 'Sutan Mufti | Urban Planner'
 [permalinks]
   project-cases = '/projects/:contentbasename/'
 
+[services.googleAnalytics]
+  ID = 'G-50BNHER5MN'
+
 [params]
   author          = "Sutan Mufti"
   description     = "Urban, Transport and Infrastructure Specialist with experience at The World Bank, Amberside Energy, and Enums.id. Bridging geospatial data, transport modelling, and cloud engineering."
