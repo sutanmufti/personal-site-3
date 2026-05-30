@@ -5,7 +5,7 @@ title       = 'Modern 2026 Geospatial Analytics Stack: Which to Use?'
 tags        = ['geospatial', 'spatial data science', 'urban analytics', 'GIS']
 description = 'A spatial data scientist guide on which tool to choose to analyse geospatial data'
 Summary     = 'A spatial data scientist guide on which tool to choose to analyse geospatial data'
-featured_image = 'arcgis_pro.jpg'
+featured_image = 'SEA.png'
 +++
 
 # Executive Summary
