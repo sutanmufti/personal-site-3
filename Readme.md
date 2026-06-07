@@ -1,7 +1,7 @@
 # Sutan.co.uk
 
 [![Deploy to GitHub Pages](https://github.com/sutanmufti/personal-site-3/actions/workflows/deploy.yml/badge.svg)](https://github.com/sutanmufti/personal-site-3/actions/workflows/deploy.yml)
-[![Hugo](https://img.shields.io/badge/Hugo-0.160.1-FF4088?logo=hugo&logoColor=white)](https://gohugo.io/)
+[![Hugo](https://img.shields.io/badge/Hugo-0.162.1-FF4088?logo=hugo&logoColor=white)](https://gohugo.io/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fsutan.co.uk)](https://sutan.co.uk)

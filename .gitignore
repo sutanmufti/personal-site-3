@@ -32,3 +32,6 @@ resources/_gen/
 
 # Hugo module cache
 /tmp/
+
+
+hugo_stats.json

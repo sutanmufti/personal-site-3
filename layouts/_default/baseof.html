@@ -52,8 +52,12 @@
     }
   </script>
   {{ template "_internal/google_analytics.html" . }}
-  {{ $css := resources.Get "css/main.css" | css.PostCSS }}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+  
+  {{ with (templates.Defer (dict "key" "global")) }}
+    {{ partial "css.html" . }}
+  {{ end }}
+
+
   {{ $js := resources.Get "js/main.js" | js.Build (dict "minify" true) | fingerprint }}
   <script src="{{ $js.RelPermalink }}" defer></script>
 </head>
